@@ -7,10 +7,10 @@ Unwatched Anime in Plex will not be synced so only those that have at least one 
 
 Currently planned for future releases:
 
-- Error handling
-- CLI improvements (colors / status / user input etc..)
-- Improve matching by using more MAL info, year comparision is an option but was hit and miss during testing before
-- Multiple season support, right now sync is limited to season 1 and not sure if feasible with the way MAL lists them 
+- [x] CLI improvements (colors / status)
+- [ ] Improve error handling
+- [ ] Improve matching by using more MAL info, year comparision is an option but was hit and miss during testing before
+- [ ] Multiple season support, right now sync is limited to season 1 and not sure if feasible with the way MAL lists them 
 
 Previous version was written in C# (.NET) but due to library issues switched to Python where there are some great ones to work with, this is the first version and rough around the edges so bugs may occur.
 
@@ -18,9 +18,7 @@ Previous version was written in C# (.NET) but due to library issues switched to 
 
 ### Step 1 - Configuration
 
-Open `PlexMALSync.py` with your favorite text editor, recommend using [NotePad++](https://notepad-plus-plus.org/) or [Visual Studio Code](https://code.visualstudio.com/) under Windows as to not mess up formatting.
-
-Change the configuration section at the top (authentication / section), for Plex you need to select one authentication method (MyPlex OR Direct IP).
+From the project directory copy the example settings file `settings.ini.example` to `settings.ini`, open `settings.ini` with your favorite editor and edit where needed.
 
 For the Direct IP authentication method you need to find your token manually:
 
